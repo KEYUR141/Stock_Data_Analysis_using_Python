@@ -2,9 +2,9 @@
 
 <h1 style="text-align:center;">Stock Data Analysis</h1>
 <p>For my stock data analysis project using Python, the assignment involves three main steps. First, I need to create a table in an MS SQL Server database and insert data for one ticker symbol into this table using Python. This involves setting up the database connection in MS SQL Server Management Studio and ensuring the data is successfully inserted. Second, I will analyze the data using Python and create an investing or trading strategy. The recommended strategy for those unfamiliar is the simple moving average (SMA) crossover strategy, which identifies potential buy and sell signals based on the crossover of short-term and long-term moving averages. Finally, I will submit the results of how my strategy is performing. To ensure data integrity, I will write a unit testing module with pytest to validate that the input data meets specified criteria: the Open, High, Low, and Close columns should be decimals, the Volume column should be an integer, the Instrument column should be a string, and the Datetime column should be a datetime type. By completing these steps, I aim to effectively demonstrate my ability to handle, test, and analyze stock data using Python and MS SQL Server.</p>
-
+<br><br><br>
 <div class='Data_Insert'>
-    <h1>Inserting Data into MS SQL Server Using Python</h1>
+    <h1>1.Inserting Data into MS SQL Server Using Python</h1>
     <p>
         This project demonstrates how to insert stock data into an MS SQL Server database using Python and the `pyodbc` library. The process involves establishing a connection to the database, reading data from an Excel file, creating a table in the database, and inserting the data into the table. Below are the steps in detail:
     </p>
@@ -89,10 +89,11 @@ conn.commit()
 <p>1.Screenshot of the query of the Database in the Microsoft SQL server studio management</p>
 </div>
 
+<br><br><br>
 <div class='Moving_Average'>
-  
+
     
-<h1>Simple Moving Average Crossover Strategy</h1>
+<h1>2.Simple Moving Average Crossover Strategy</h1>
 <p>
         This project demonstrates how to implement a Simple Moving Average (SMA) crossover strategy using Python. The data is fetched from an SQL database, and the analysis includes calculating moving averages, generating trading signals, and visualizing the results. The `get_data_from_sql` function, used to fetch data, is imported from the `Testing.sources.data_fetch` module. Here's the detailed process:
 </p>
@@ -165,7 +166,7 @@ plt.show()
 
 <div class='TestCase'>
     <body>
-    <h1>Unit Testing for Stock Data Validity and Simple Moving Average Analysis</h1>
+    <h1>3.Unit Testing for Stock Data Validity and Simple Moving Average Analysis</h1>
     <p>
         This section demonstrates the unit tests created to validate the stock data and analyze the Simple Moving Average (SMA) crossover strategy. The data is fetched from the SQL database, and several tests are performed to ensure the data's integrity. Additionally, we used SQLAlchemy for better pandas support, as using `pyodbc` generated warnings. Below are the steps and explanations:
     </p>
@@ -235,10 +236,11 @@ def get_data_from_sql():
         </li>
     </ol>
 </div>
+<br><br><br>
 
 <div class='End-Part'>
     <body>
-    <h1>Conclusion</h1>
+    <h1>4.Conclusion</h1>
     <p>
         In this project, we have demonstrated a comprehensive approach to analyzing stock data using Python. From establishing a secure database connection and inserting data into MS SQL Server, to performing unit tests with `pytest` to ensure data integrity, and finally implementing and analyzing a Simple Moving Average (SMA) crossover strategy. By following these steps, we've ensured our data is accurate and our trading strategy is well-validated. This repository serves as a robust example of how Python can be used effectively for financial data analysis and strategy development.
     </p>
