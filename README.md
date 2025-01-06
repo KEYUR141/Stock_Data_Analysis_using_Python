@@ -1,6 +1,6 @@
 # Stock_Data_Analysis_using_Python
 
-<h1>Stock Data Analysis</h1>
+<h1 style="text-align:center;">Stock Data Analysis</h1>
 <p>For my stock data analysis project using Python, the assignment involves three main steps. First, I need to create a table in an MS SQL Server database and insert data for one ticker symbol into this table using Python. This involves setting up the database connection in MS SQL Server Management Studio and ensuring the data is successfully inserted. Second, I will analyze the data using Python and create an investing or trading strategy. The recommended strategy for those unfamiliar is the simple moving average (SMA) crossover strategy, which identifies potential buy and sell signals based on the crossover of short-term and long-term moving averages. Finally, I will submit the results of how my strategy is performing. To ensure data integrity, I will write a unit testing module with pytest to validate that the input data meets specified criteria: the Open, High, Low, and Close columns should be decimals, the Volume column should be an integer, the Instrument column should be a string, and the Datetime column should be a datetime type. By completing these steps, I aim to effectively demonstrate my ability to handle, test, and analyze stock data using Python and MS SQL Server.</p>
 
 <div class='Data_Insert'>
@@ -158,8 +158,8 @@ plt.show()
 <img src="Simple_Moving_Average.png" alt="Output Screenshot 1" width="800">
 <p>Screenshot 1: Data Fetching and Head of DataFrame</p>
     
-<img src="output2.png" alt="Output Screenshot 2" width="800">
-<p>Screenshot 2: Moving Averages and Trading Signals</p>
+<img src="Graph_Output.png" alt="Output Screenshot 2" width="800">
+<p>Screenshot 2: Moving Averages and Trading Signals in Graphs</p>
 
 </div>
 
@@ -178,7 +178,7 @@ plt.show()
         <p>UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.</p>
     </blockquote>
     <p>Here is the screenshot of the test cases passed but showing warnings:</p>
-    <img src="Test_Cases.png" alt="Test Cases Passed with Warnings" width="800">
+    <img src="Test_Pass_Warnings.png" alt="Test Cases Passed with Warnings" width="800">
     
 <p>
         To resolve this, we switched to using SQLAlchemy for the database connection:
