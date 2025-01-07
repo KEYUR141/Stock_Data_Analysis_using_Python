@@ -179,7 +179,7 @@ plt.show()
         <p>UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.</p>
     </blockquote>
     <p>Here is the screenshot of the test cases passed but showing warnings:</p>
-    <img src="Test_Pass_Warnings.png" alt="Test Cases Passed with Warnings" width="800">
+    <img src="Test_Pass_Warning.png" alt="Test Cases Passed with Warnings" width="800">
     
 <p>
         To resolve this, we switched to using SQLAlchemy for the database connection:
