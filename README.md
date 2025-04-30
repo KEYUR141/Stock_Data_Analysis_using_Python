@@ -166,9 +166,9 @@ plt.show()
 
 <div class='TestCase'>
     <body>
-    <h1>III.Unit Testing for Stock Data Validity and Simple Moving Average Analysis</h1>
+    <h1>III.Passing the testcases for Stock Data Validity</h1>
     <p>
-        This section demonstrates the unit tests created to validate the stock data and analyze the Simple Moving Average (SMA) crossover strategy. The data is fetched from the SQL database, and several tests are performed to ensure the data's integrity. Additionally, we used SQLAlchemy for better pandas support, as using `pyodbc` generated warnings. Below are the steps and explanations:
+        This section demonstrates the unit tests created to validate the stock data. The data is fetched from the SQL database, and several tests are performed to ensure the data's integrity. Additionally, we used SQLAlchemy for better pandas support, as using `pyodbc` generated warnings. Below are the steps and explanations:
     </p>
     
 <h2>Data Fetching</h2>
@@ -196,7 +196,7 @@ def get_data_from_sql():
     <p>Here is the screenshot of the test cases passed without any warnings:</p>
     <img src='Test_Pass.png' alt="Test Cases Passed without Warnings" width="800">
     
-<h2>Unit Testing with Pytest</h2>
+<h2>Checking the Testcases Passed or Not using Pytest</h2>
     <p>
         The unit testing module uses `pytest` to validate the integrity of the data fetched from the SQL database. The tests ensure that the data types for each column are correct. Below are the specific tests performed:
     </p>
